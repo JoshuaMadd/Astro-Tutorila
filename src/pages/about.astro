@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
 
 const pageTitle = "About Me"
 
@@ -23,7 +23,7 @@ const textCase = "uppercase"
 
 <style define:vars={{skillColor, fontWeight, textCase}}>
     .skill {
-        color: var(--skillColor);
+        color: {var(--skillColor)};
         font-weight: var(--fontWeight);
         text-transform: var(--textCase);
     }
